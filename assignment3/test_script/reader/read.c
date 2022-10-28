@@ -7,13 +7,13 @@ extern int errno;
 int main() 
 {     
     // open or create haha.txt is created. 
-    int fd = open("./reader/haha.txt", O_RDONLY | O_CREAT);
+    int fd = open("haha.txt", O_RDONLY | O_CREAT);
     // open p123.txt twice created.  
-    int fd1 = open("./reader/p123.txt", O_RDONLY);
-    int fd2 = open("./reader/p123.txt", O_RDONLY);
+    int fd1 = open("p123.txt", O_RDONLY);
+    int fd2 = open("p123.txt", O_RDONLY);
     // open two other p-files.
-    int fd3 = open("./reader/protobuf123.txt", O_RDONLY);
-    int fd4 = open("./reader/protobuf345.txt", O_RDONLY);
+    int fd3 = open("protobuf123.txt", O_RDONLY);
+    int fd4 = open("protobuf345.txt", O_RDONLY);
       
     printf("fd = %d/n", fd); 
       
